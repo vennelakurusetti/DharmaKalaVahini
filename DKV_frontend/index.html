@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dharma Kala Vahini</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif+Telugu:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Decorative top border -->
+  <div class="border-stripe"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="Dharma Kala Vahini Logo" class="nav-logo-img">
+        <div class="logo-text">
+          <span class="logo-main">Dharma Kala Vahini</span>
+          <span class="logo-sub">ధర్మ కళా వాహిని</span>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="join.html">Join Us</a></li>
+        <li><a href="donations.html">Donations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('en')">English</button>
+        <button class="lang-btn" onclick="setLang('te')">తెలుగు</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-mandala hero-mandala-left"></div>
+    <div class="hero-mandala hero-mandala-right"></div>
+    <div class="hero-content">
+      <div class="hero-logo-wrap">
+        <img src="images/logo.png" alt="Dharma Kala Vahini" class="hero-logo-img">
+      </div>
+
+      <h1 class="hero-org-name">
+        <span class="hero-org-en lang-en">Dharma Kala Vahini</span>
+        <span class="hero-org-te lang-te" style="display:none;">ధర్మ కళా వాహిని</span>
+      </h1>
+
+      <div class="hero-divider">
+        <span class="divider-line"></span>
+        <span class="divider-lotus">❋</span>
+        <span class="divider-line"></span>
+      </div>
+
+      <p class="hero-quote" data-en="Serving Society Through Culture" data-te="సంస్కృతి ద్వారా సమాజ సేవ">
+        Serving Society Through Culture
+      </p>
+
+      <p class="hero-subtitle" data-en="Empowering communities through cultural awareness, social welfare, and community development initiatives." data-te="సాంస్కృతిక చైతన్యం, సామాజిక సంక్షేమం మరియు సమాజ అభివృద్ధి కార్యక్రమాల ద్వారా సమాజాన్ని శక్తివంతం చేయడం.">
+        Empowering communities through cultural awareness, social welfare, and community development initiatives.
+      </p>
+
+      <div class="hero-cta">
+        <a href="join.html" class="btn-primary" data-en="Join Our Mission" data-te="మా మిషన్‌లో చేరండి">Join Our Mission</a>
+        <a href="donations.html" class="btn-secondary" data-en="Support Us" data-te="మాకు సహాయం చేయండి">Support Us</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span></span>
+      <span data-en="Scroll to explore" data-te="అన్వేషించడానికి స్క్రోల్ చేయండి">Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- DECORATIVE BAND -->
+  <div class="pattern-band">
+    <div class="pattern-inner">
+      <span>❋</span><span>❋</span><span>❋</span><span>❋</span><span>❋</span>
+      <span>❋</span><span>❋</span><span>❋</span><span>❋</span><span>❋</span>
+      <span>❋</span><span>❋</span><span>❋</span><span>❋</span><span>❋</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about-section">
+    <div class="container">
+      <div class="section-label" data-en="WHO WE ARE" data-te="మనం ఎవరు">WHO WE ARE</div>
+      <h2 class="section-title" data-en="About Dharma Kala Vahini" data-te="ధర్మ కళా వాహిని గురించి">About Dharma Kala Vahini</h2>
+      <div class="section-ornament">⸻ ❋ ⸻</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p data-en="Dharma Kala Vahini is a non-profit organization dedicated to promoting social welfare, cultural awareness, and community development through various initiatives and events." data-te="ధర్మ కళా వాహిని అనేది వివిధ కార్యక్రమాలు మరియు ఈవెంట్‌ల ద్వారా సామాజిక సంక్షేమం, సాంస్కృతిక అవగాహన మరియు సమాజ అభివృద్ధిని ప్రోత్సహించడానికి అంకితమైన లాభాపేక్షలేని సంస్థ.">
+            Dharma Kala Vahini is a non-profit organization dedicated to promoting social welfare, cultural awareness, and community development through various initiatives and events.
+          </p>
+          <p data-en="Our work bridges the ancient wisdom of our traditions with the needs of modern communities, creating lasting impact through cultural programs, social service, and educational outreach." data-te="మా పని మన సంప్రదాయాల పురాతన జ్ఞానాన్ని ఆధునిక సమాజాల అవసరాలతో అనుసంధానిస్తుంది, సాంస్కృతిక కార్యక్రమాలు, సామాజిక సేవ మరియు విద్యా కార్యక్రమాల ద్వారా శాశ్వత ప్రభావాన్ని సృష్టిస్తుంది.">
+            Our work bridges the ancient wisdom of our traditions with the needs of modern communities, creating lasting impact through cultural programs, social service, and educational outreach.
+          </p>
+        </div>
+        <div class="about-pillars">
+          <div class="pillar">
+            <div class="pillar-icon">🪔</div>
+            <h3 data-en="Mission" data-te="లక్ష్యం">Mission</h3>
+            <p data-en="To serve society through cultural initiatives and social welfare programs." data-te="సాంస్కృతిక కార్యక్రమాలు మరియు సామాజిక సంక్షేమ పథకాల ద్వారా సమాజానికి సేవ చేయడం.">To serve society through cultural initiatives and social welfare programs.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">🌸</div>
+            <h3 data-en="Vision" data-te="దృష్టి">Vision</h3>
+            <p data-en="A culturally enriched, harmonious society where traditions uplift communities." data-te="సాంస్కృతికంగా సమృద్ధిగా, సామరస్యపూర్వకమైన సమాజం, ఇక్కడ సంప్రదాయాలు సమాజాలను ఉద్ధరిస్తాయి.">A culturally enriched, harmonious society where traditions uplift communities.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">🏺</div>
+            <h3 data-en="Values" data-te="విలువలు">Values</h3>
+            <p data-en="Dharma, Seva, and Sanskriti — righteousness, service, and culture." data-te="ధర్మ, సేవ మరియు సంస్కృతి — నీతి, సేవ మరియు సంస్కృతి.">Dharma, Seva, and Sanskriti — righteousness, service, and culture.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-target="5">0</div>
+          <div class="stat-label" data-en="Board Members" data-te="బోర్డు సభ్యులు">Board Members</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="20">0</div>
+          <div class="stat-label" data-en="Projects Completed" data-te="పూర్తయిన ప్రాజెక్టులు">Projects Completed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="500">0</div>
+          <div class="stat-label" data-en="Lives Impacted" data-te="ప్రభావితమైన జీవితాలు">Lives Impacted</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="4">0</div>
+          <div class="stat-label" data-en="Years of Service" data-te="సేవా సంవత్సరాలు">Years of Service</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOARD MEMBERS -->
+  <section class="board-section">
+    <div class="container">
+      <div class="section-label" data-en="OUR LEADERSHIP" data-te="మా నాయకత్వం">OUR LEADERSHIP</div>
+      <h2 class="section-title" data-en="Board Members" data-te="బోర్డు సభ్యులు">Board Members</h2>
+      <div class="section-ornament">⸻ ❋ ⸻</div>
+
+      <div class="board-slider-wrapper">
+        <div class="board-track-outer">
+          <div class="board-track" id="boardTrack">
+
+            <div class="board-card">
+              <div class="board-card-inner">
+                <div class="board-img-wrap">
+                  <img src="images/board1.jpg" alt="Rajesh Kumar" onerror="this.src='https://ui-avatars.com/api/?name=Rajesh+Kumar&background=8B1A1A&color=F5F0E8&size=200&font-size=0.38'">
+                  <div class="board-img-border"></div>
+                </div>
+                <div class="board-info">
+                  <h3 data-en="Rajesh Kumar" data-te="రాజేష్ కుమార్">Rajesh Kumar</h3>
+                  <span class="board-role" data-en="President" data-te="అధ్యక్షుడు">President</span>
+                  <p data-en="Visionary leader with 15+ years of community service and cultural promotion." data-te="15+ సంవత్సరాల సమాజ సేవ మరియు సాంస్కృతిక ప్రచారంతో దూరదృష్టి కలిగిన నాయకుడు.">Visionary leader with 15+ years of community service and cultural promotion.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="board-card">
+              <div class="board-card-inner">
+                <div class="board-img-wrap">
+                  <img src="images/board2.jpg" alt="Sunitha Devi" onerror="this.src='https://ui-avatars.com/api/?name=Sunitha+Devi&background=8B1A1A&color=F5F0E8&size=200&font-size=0.38'">
+                  <div class="board-img-border"></div>
+                </div>
+                <div class="board-info">
+                  <h3 data-en="Sunitha Devi" data-te="సునీత దేవి">Sunitha Devi</h3>
+                  <span class="board-role" data-en="Vice President" data-te="ఉపాధ్యక్షుడు">Vice President</span>
+                  <p data-en="Dedicated to women's empowerment and cultural education for youth." data-te="మహిళా సాధికారత మరియు యువత కోసం సాంస్కృతిక విద్యకు అంకితమైంది.">Dedicated to women's empowerment and cultural education for youth.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="board-card">
+              <div class="board-card-inner">
+                <div class="board-img-wrap">
+                  <img src="images/board3.jpg" alt="Venkat Rao" onerror="this.src='https://ui-avatars.com/api/?name=Venkat+Rao&background=8B1A1A&color=F5F0E8&size=200&font-size=0.38'">
+                  <div class="board-img-border"></div>
+                </div>
+                <div class="board-info">
+                  <h3 data-en="Venkat Rao" data-te="వెంకట్ రావు">Venkat Rao</h3>
+                  <span class="board-role" data-en="Secretary" data-te="కార్యదర్శి">Secretary</span>
+                  <p data-en="Experienced administrator ensuring smooth operations across all projects." data-te="అన్ని ప్రాజెక్టులలో సజావుగా కార్యకలాపాలు జరిగేలా చూసే అనుభవజ్ఞుడైన నిర్వాహకుడు.">Experienced administrator ensuring smooth operations across all projects.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="board-card">
+              <div class="board-card-inner">
+                <div class="board-img-wrap">
+                  <img src="images/board4.jpg" alt="Priya Sharma" onerror="this.src='https://ui-avatars.com/api/?name=Priya+Sharma&background=8B1A1A&color=F5F0E8&size=200&font-size=0.38'">
+                  <div class="board-img-border"></div>
+                </div>
+                <div class="board-info">
+                  <h3 data-en="Priya Sharma" data-te="ప్రియా శర్మ">Priya Sharma</h3>
+                  <span class="board-role" data-en="Treasurer" data-te="కోశాధికారి">Treasurer</span>
+                  <p data-en="Finance expert managing donations and funds with full transparency." data-te="పూర్తి పారదర్శకతతో విరాళాలు మరియు నిధులను నిర్వహించే ఆర్థిక నిపుణురాలు.">Finance expert managing donations and funds with full transparency.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="board-card">
+              <div class="board-card-inner">
+                <div class="board-img-wrap">
+                  <img src="images/board5.jpg" alt="Mohan Reddy" onerror="this.src='https://ui-avatars.com/api/?name=Mohan+Reddy&background=8B1A1A&color=F5F0E8&size=200&font-size=0.38'">
+                  <div class="board-img-border"></div>
+                </div>
+                <div class="board-info">
+                  <h3 data-en="Mohan Reddy" data-te="మోహన్ రెడ్డి">Mohan Reddy</h3>
+                  <span class="board-role" data-en="Cultural Director" data-te="సాంస్కృతిక దర్శకుడు">Cultural Director</span>
+                  <p data-en="Passionate about classical arts, organizing cultural events and festivals." data-te="శాస్త్రీయ కళలపై మక్కువతో, సాంస్కృతిక కార్యక్రమాలు మరియు పండుగలను నిర్వహిస్తారు.">Passionate about classical arts, organizing cultural events and festivals.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="slider-controls">
+          <button class="slider-btn" id="prevBtn" aria-label="Previous">‹</button>
+          <div class="slider-dots" id="sliderDots"></div>
+          <button class="slider-btn" id="nextBtn" aria-label="Next">›</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="cta-section">
+    <div class="cta-overlay"></div>
+    <div class="cta-content">
+      <div class="section-label light" data-en="GET INVOLVED" data-te="భాగస్వాములు అవ్వండి">GET INVOLVED</div>
+      <h2 data-en="Be Part of the Change" data-te="మార్పులో భాగమవ్వండి">Be Part of the Change</h2>
+      <div class="section-ornament light">⸻ ❋ ⸻</div>
+      <p data-en="Your support — whether through volunteering or donations — helps us continue our mission of cultural and social upliftment." data-te="మీ మద్దతు — స్వచ్ఛంద సేవ ద్వారా అయినా లేదా విరాళాల ద్వారా అయినా — సాంస్కృతిక మరియు సామాజిక అభ్యున్నతి యొక్క మా లక్ష్యాన్ని కొనసాగించడంలో మాకు సహాయపడుతుంది.">
+        Your support — whether through volunteering or donations — helps us continue our mission of cultural and social upliftment.
+      </p>
+      <div class="cta-buttons">
+        <a href="join.html" class="btn-primary" data-en="Volunteer Now" data-te="ఇప్పుడు స్వచ్ఛందంగా పని చేయండి">Volunteer Now</a>
+        <a href="donations.html" class="btn-outline" data-en="Donate Today" data-te="ఈరోజు విరాళమివ్వండి">Donate Today</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Dharma Kala Vahini" class="footer-logo-img">
+        <div>
+          <div class="footer-logo-text">Dharma Kala Vahini</div>
+          <div class="footer-logo-sub">ధర్మ కళా వాహిని</div>
+        </div>
+      </div>
+      <p class="footer-tagline" data-en="Serving Society Through Culture" data-te="సంస్కృతి ద్వారా సమాజ సేవ">Serving Society Through Culture</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html" data-en="Home" data-te="హోమ్">Home</a>
+      <a href="projects.html" data-en="Projects" data-te="ప్రాజెక్టులు">Projects</a>
+      <a href="join.html" data-en="Join Us" data-te="మాలో చేరండి">Join Us</a>
+      <a href="donations.html" data-en="Donations" data-te="విరాళాలు">Donations</a>
+      <a href="contact.html" data-en="Contact" data-te="సంప్రదింపు">Contact</a>
+    </div>
+    <div class="footer-bottom">
+      <p data-en="© 2024 Dharma Kala Vahini. All rights reserved." data-te="© 2024 ధర్మ కళా వాహిని. అన్ని హక్కులు రిజర్వ్ చేయబడ్డాయి.">© 2024 Dharma Kala Vahini. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
