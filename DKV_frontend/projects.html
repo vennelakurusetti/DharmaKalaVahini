@@ -4,16 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dharma Kala Vahini - Projects</title>
-
+<link rel="stylesheet" href="style.css">
 <style>
-
-body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    padding:0;
-    background:#FAF7F2;
-}
-
 h1{
     text-align:center;
     padding:40px;
@@ -72,18 +64,44 @@ h1{
 }
 
 @media(max-width:768px){
-
 .images{
 flex-direction:column;
 align-items:center;
 }
-
 }
-
 </style>
 </head>
-
 <body>
+
+  <!-- Decorative top border -->
+  <div class="border-stripe"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="Dharma Kala Vahini Logo" class="nav-logo-img">
+        <div class="logo-text">
+          <span class="logo-main">Dharma Kala Vahini</span>
+          <span class="logo-sub">ధర్మ కళా వాహిని</span>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="join.html">Join Us</a></li>
+        <li><a href="donations.html">Donations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('en')">English</button>
+        <button class="lang-btn" onclick="setLang('te')">తెలుగు</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
 <h1>Our Projects</h1>
 
@@ -157,5 +175,6 @@ spiritual atmosphere that brought the community together.
 
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
