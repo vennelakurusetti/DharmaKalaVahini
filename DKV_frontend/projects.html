@@ -4,79 +4,116 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dharma Kala Vahini - Projects</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif+Telugu:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <style>
-h1{
-    text-align:center;
-    padding:40px;
-    font-size:42px;
-    color:#8C1D2D;
-    letter-spacing:2px;
-}
-
-.project{
-    background:#EFE6DA;
-    margin:40px auto;
-    padding:35px;
-    width:85%;
-    border-radius:14px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.15);
-    transition: transform 0.3s ease;
-}
-
-.project:hover{
+  .projects-title {
+    text-align: center;
+    padding: 5rem 2rem 1rem;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2.4rem, 5vw, 3.6rem);
+    font-weight: 700;
+    color: #8B1A1A;
+    letter-spacing: 0.02em;
+  }
+  .projects-subtitle {
+    text-align: center;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    color: #6B5B3E;
+    margin-bottom: 3rem;
+  }
+  .projects-ornament {
+    text-align: center;
+    color: #B8860B;
+    font-size: 1rem;
+    letter-spacing: 0.3em;
+    margin-bottom: 3rem;
+  }
+  .project {
+    background: #EFE6DA;
+    margin: 0 auto 3rem;
+    padding: 2.5rem 3rem;
+    width: 85%;
+    border-radius: 0 0 12px 12px;
+    border-top: 4px solid #8B1A1A;
+    box-shadow: 0 8px 28px rgba(139,26,26,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-top-color 0.3s;
+  }
+  .project:hover {
     transform: translateY(-6px);
-}
-
-.project h2{
-    font-size:30px;
-    color:#B12A4A;
-    margin-bottom:15px;
-}
-
-.project p{
-    font-size:18px;
-    line-height:1.7;
-    color:#333;
-}
-
-.images{
-    display:flex;
-    gap:25px;
-    margin-top:25px;
-    flex-wrap:wrap;
-}
-
-.images img{
-    flex:1;
-    min-width:280px;
-    height:220px;
-    width:100%;
-    object-fit:cover;
-    border-radius:12px;
-
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.images img:hover{
-    transform: scale(1.15);
-    box-shadow:0 10px 25px rgba(0,0,0,0.35);
-}
-
-@media(max-width:768px){
-.images{
-flex-direction:column;
-align-items:center;
-}
-}
+    box-shadow: 0 14px 40px rgba(139,26,26,0.18);
+    border-top-color: #B8860B;
+  }
+  .project-num {
+    display: inline-block;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #B8860B;
+    border: 1px solid #B8860B;
+    padding: 0.25rem 1rem;
+    border-radius: 2px;
+    margin-bottom: 0.8rem;
+  }
+  .project h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    color: #8B1A1A;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  .project p {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.12rem;
+    line-height: 1.9;
+    color: #3D2B0F;
+  }
+  .images {
+    display: flex;
+    gap: 20px;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  .images img {
+    flex: 1;
+    min-width: 260px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid rgba(184,134,11,0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.3s;
+  }
+  .images img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 12px 32px rgba(139,26,26,0.25);
+    border-color: #B8860B;
+  }
+  .project-divider {
+    text-align: center;
+    color: #B8860B;
+    font-size: 1rem;
+    letter-spacing: 0.5em;
+    margin: 0 auto 3rem;
+    opacity: 0.5;
+  }
+  @media (max-width: 768px) {
+    .project { width: 92%; padding: 2rem 1.5rem; }
+    .images { flex-direction: column; align-items: center; }
+    .images img { min-width: unset; width: 100%; }
+  }
 </style>
 </head>
 <body>
 
-  <!-- Decorative top border -->
   <div class="border-stripe"></div>
 
-  <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
       <div class="nav-logo">
@@ -87,11 +124,11 @@ align-items:center;
         </div>
       </div>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
-        <li><a href="join.html">Join Us</a></li>
-        <li><a href="donations.html">Donations</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" data-en="Home" data-te="హోమ్">Home</a></li>
+        <li><a href="projects.html" class="active" data-en="Projects" data-te="ప్రాజెక్టులు">Projects</a></li>
+        <li><a href="join.html" data-en="Join Us" data-te="మాలో చేరండి">Join Us</a></li>
+        <li><a href="donations.html" data-en="Donations" data-te="విరాళాలు">Donations</a></li>
+        <li><a href="contact.html" data-en="Contact" data-te="సంప్రదింపు">Contact</a></li>
       </ul>
       <div class="lang-toggle">
         <button class="lang-btn active" onclick="setLang('en')">English</button>
@@ -103,78 +140,88 @@ align-items:center;
     </div>
   </nav>
 
-<h1>Our Projects</h1>
+  <h1 class="projects-title" data-en="Our Projects" data-te="మా ప్రాజెక్టులు">Our Projects</h1>
+  <p class="projects-subtitle" data-en="Initiatives that serve, preserve, and uplift our community" data-te="మా సమాజానికి సేవ చేసే, సంరక్షించే మరియు అభ్యున్నతి చేసే కార్యక్రమాలు">Initiatives that serve, preserve, and uplift our community</p>
+  <div class="projects-ornament">⸻ ❋ ⸻</div>
 
-<!-- Project 1 -->
+  <!-- Project 1 -->
+  <div class="project">
+    <span class="project-num" data-en="Project 01" data-te="ప్రాజెక్ట్ 01">Project 01</span>
+    <h2 data-en="Musi River Photo Frame Cleaning Initiative" data-te="మూసీ నది ఫోటో ఫ్రేమ్ శుభ్రపరచడం కార్యక్రమం">Musi River Photo Frame Cleaning Initiative</h2>
+    <p
+      data-en="As part of our environmental and spiritual preservation efforts, Dharma Kala Vahini volunteers organized a cleanup drive near the Musi River where several sacred photo frames had been discarded. Our team carefully collected these frames, cleaned them respectfully, and relocated them to a nearby temple so they could be preserved with dignity. This activity not only helped clean the surroundings but also ensured that religious symbols were treated with proper respect."
+      data-te="మా పర్యావరణ మరియు ఆధ్యాత్మిక సంరక్షణ కృషిలో భాగంగా, ధర్మ కళా వాహిని స్వచ్ఛంద సేవకులు మూసీ నది సమీపంలో శుభ్రపరచడం కార్యక్రమాన్ని నిర్వహించారు, అక్కడ అనేక పవిత్ర ఫోటో ఫ్రేమ్‌లు పడవేయబడ్డాయి. మా బృందం ఈ ఫ్రేమ్‌లను జాగ్రత్తగా సేకరించి, గౌరవంగా శుభ్రపరచి, గౌరవంగా సంరక్షించబడేలా సమీపంలోని దేవాలయానికి తరలించింది. ఈ కార్యక్రమం పరిసరాలను శుభ్రం చేయడమే కాకుండా మతపరమైన చిహ్నాలు తగిన గౌరవంతో చూడబడేలా నిర్ధారించింది.">
+      As part of our environmental and spiritual preservation efforts, Dharma Kala Vahini volunteers organized a cleanup drive near the Musi River where several sacred photo frames had been discarded. Our team carefully collected these frames, cleaned them respectfully, and relocated them to a nearby temple so they could be preserved with dignity. This activity not only helped clean the surroundings but also ensured that religious symbols were treated with proper respect.
+    </p>
+    <div class="images">
+      <img src="images/project_1_1.jpeg" alt="Musi River Cleanup 1">
+      <img src="images/project_1_2.jpeg" alt="Musi River Cleanup 2">
+      <img src="images/project_1_3.jpeg" alt="Musi River Cleanup 3">
+    </div>
+  </div>
 
-<div class="project">
+  <div class="project-divider">❋ ❋ ❋</div>
 
-<h2>Musi River Photo Frame Cleaning Initiative</h2>
+  <!-- Project 2 -->
+  <div class="project">
+    <span class="project-num" data-en="Project 02" data-te="ప్రాజెక్ట్ 02">Project 02</span>
+    <h2 data-en="Temple Cleaning Service Activity" data-te="దేవాలయ శుభ్రపరచడం సేవా కార్యక్రమం">Temple Cleaning Service Activity</h2>
+    <p
+      data-en="Dharma Kala Vahini organized a temple cleaning drive to maintain the purity and peaceful environment of the temple premises. Volunteers gathered early in the day and worked together to sweep the temple grounds, remove waste, and organize the surroundings. This initiative was conducted with the intention of promoting cleanliness, community service, and devotion towards maintaining sacred places."
+      data-te="ధర్మ కళా వాహిని దేవాలయ ప్రాంగణంలో పవిత్రత మరియు శాంతియుత వాతావరణాన్ని నిర్వహించడానికి దేవాలయ శుభ్రపరచడం కార్యక్రమాన్ని నిర్వహించింది. స్వచ్ఛంద సేవకులు పగలు తొందరగా సేకరించి, దేవాలయ ప్రాంగణాన్ని తుడిచి, వ్యర్థాలు తొలగించి, పరిసరాలను క్రమబద్ధం చేయడానికి కలిసి పని చేశారు. ఈ కార్యక్రమం పవిత్ర స్థలాలను నిర్వహించడంలో పరిశుభ్రత, సమాజ సేవ మరియు భక్తిని ప్రోత్సహించాలనే ఉద్దేశంతో నిర్వహించబడింది.">
+      Dharma Kala Vahini organized a temple cleaning drive to maintain the purity and peaceful environment of the temple premises. Volunteers gathered early in the day and worked together to sweep the temple grounds, remove waste, and organize the surroundings. This initiative was conducted with the intention of promoting cleanliness, community service, and devotion towards maintaining sacred places.
+    </p>
+    <div class="images">
+      <img src="images/project_2_1.jpeg" alt="Temple Cleaning 1">
+      <img src="images/project_2_2.jpeg" alt="Temple Cleaning 2">
+      <img src="images/project_2_3.jpeg" alt="Temple Cleaning 3">
+    </div>
+  </div>
 
-<p>
-As part of our environmental and spiritual preservation efforts, Dharma Kala Vahini volunteers 
-organized a cleanup drive near the Musi River where several sacred photo frames had been 
-discarded. Our team carefully collected these frames, cleaned them respectfully, and relocated 
-them to a nearby temple so they could be preserved with dignity. This activity not only helped 
-clean the surroundings but also ensured that religious symbols were treated with proper respect.
-</p>
+  <div class="project-divider">❋ ❋ ❋</div>
 
-<div class="images">
-<img src="musi1.jpeg">
-<img src="musi2.jpeg">
-<img src="musi3.jpeg">
-</div>
+  <!-- Project 3 -->
+  <div class="project">
+    <span class="project-num" data-en="Project 03" data-te="ప్రాజెక్ట్ 03">Project 03</span>
+    <h2 data-en="Maha Shivaratri Jagaram Spiritual Event" data-te="మహా శివరాత్రి జాగరం ఆధ్యాత్మిక కార్యక్రమం">Maha Shivaratri Jagaram Spiritual Event</h2>
+    <p
+      data-en="During the auspicious occasion of Maha Shivaratri, Dharma Kala Vahini hosted a special Jagaram event dedicated to Lord Shiva. The night was filled with devotional activities including Shiva idol making, bhajans, chanting of sacred mantras, and spiritual discussions. Participants stayed awake throughout the night in devotion, creating a vibrant and uplifting spiritual atmosphere that brought the community together."
+      data-te="మహా శివరాత్రి శుభ సందర్భంగా, ధర్మ కళా వాహిని శివుని భగవంతుడికి అంకితమైన ప్రత్యేక జాగరం కార్యక్రమాన్ని నిర్వహించింది. ఆ రాత్రి శివలింగ నిర్మాణం, భజనలు, పవిత్ర మంత్రాల జపం మరియు ఆధ్యాత్మిక చర్చలతో సహా భక్తి కార్యక్రమాలతో నిండిపోయింది. పాల్గొనేవారు రాత్రంతా భక్తితో మేల్కొని, సమాజాన్ని ఒకచోట చేర్చిన శక్తివంతమైన మరియు ఉత్తేజకరమైన ఆధ్యాత్మిక వాతావరణాన్ని సృష్టించారు.">
+      During the auspicious occasion of Maha Shivaratri, Dharma Kala Vahini hosted a special Jagaram event dedicated to Lord Shiva. The night was filled with devotional activities including Shiva idol making, bhajans, chanting of sacred mantras, and spiritual discussions. Participants stayed awake throughout the night in devotion, creating a vibrant and uplifting spiritual atmosphere that brought the community together.
+    </p>
+    <div class="images">
+      <img src="images/project_3_1.jpeg" alt="Shivaratri Event 1">
+      <img src="images/project_3_2.jpeg" alt="Shivaratri Event 2">
+      <img src="images/project_3_3.jpeg" alt="Shivaratri Event 3">
+    </div>
+  </div>
 
-</div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Dharma Kala Vahini" class="footer-logo-img">
+        <div>
+          <div class="footer-logo-text">Dharma Kala Vahini</div>
+          <div class="footer-logo-sub">ధర్మ కళా వాహిని</div>
+        </div>
+      </div>
+      <p class="footer-tagline" data-en="Serving Society Through Culture" data-te="సంస్కృతి ద్వారా సమాజ సేవ">Serving Society Through Culture</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html" data-en="Home" data-te="హోమ్">Home</a>
+      <a href="projects.html" data-en="Projects" data-te="ప్రాజెక్టులు">Projects</a>
+      <a href="join.html" data-en="Join Us" data-te="మాలో చేరండి">Join Us</a>
+      <a href="donations.html" data-en="Donations" data-te="విరాళాలు">Donations</a>
+      <a href="contact.html" data-en="Contact" data-te="సంప్రదింపు">Contact</a>
+    </div>
+    <div class="footer-bottom">
+      <p data-en="© 2024 Dharma Kala Vahini. All rights reserved." data-te="© 2024 ధర్మ కళా వాహిని. అన్ని హక్కులు రిజర్వ్ చేయబడ్డాయి.">© 2024 Dharma Kala Vahini. All rights reserved.</p>
+    </div>
+  </footer>
 
+  <div style="height: 3rem;"></div>
 
-
-<!-- Project 2 -->
-
-<div class="project">
-
-<h2>Temple Cleaning Service Activity</h2>
-
-<p>
-Dharma Kala Vahini organized a temple cleaning drive to maintain the purity and peaceful 
-environment of the temple premises. Volunteers gathered early in the day and worked together 
-to sweep the temple grounds, remove waste, and organize the surroundings. This initiative 
-was conducted with the intention of promoting cleanliness, community service, and devotion 
-towards maintaining sacred places.
-</p>
-
-<div class="images">
-<img src="temple1.jpg">
-<img src="temple2.jpg">
-<img src="temple3.jpg">
-</div>
-
-</div>
-
-
-
-<!-- Project 3 -->
-
-<div class="project">
-
-<h2>Maha Shivaratri Jagaram Spiritual Event</h2>
-
-<p>
-During the auspicious occasion of Maha Shivaratri, Dharma Kala Vahini hosted a special 
-Jagaram event dedicated to Lord Shiva. The night was filled with devotional activities 
-including Shiva idol making, bhajans, chanting of sacred mantras, and spiritual discussions. 
-Participants stayed awake throughout the night in devotion, creating a vibrant and uplifting 
-spiritual atmosphere that brought the community together.
-</p>
-
-<div class="images">
-<img src="anna.jpeg">
-<img src="shiv.jpeg">
-<img src="grp2.jpeg">
-</div>
-
-</div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

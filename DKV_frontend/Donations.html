@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donations – Dharma Kala Vahini</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif+Telugu:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="donations.css">
+</head>
+<body>
+
+  <div class="border-stripe"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="Dharma Kala Vahini Logo" class="nav-logo-img">
+        <div class="logo-text">
+          <span class="logo-main">Dharma Kala Vahini</span>
+          <span class="logo-sub">ధర్మ కళా వాహిని</span>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" data-en="Home" data-te="హోమ్">Home</a></li>
+        <li><a href="projects.html" data-en="Projects" data-te="ప్రాజెక్టులు">Projects</a></li>
+        <li><a href="join.html" data-en="Join Us" data-te="మాలో చేరండి">Join Us</a></li>
+        <li><a href="donations.html" class="active" data-en="Donations" data-te="విరాళాలు">Donations</a></li>
+        <li><a href="contact.html" data-en="Contact" data-te="సంప్రదింపు">Contact</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('en')">English</button>
+        <button class="lang-btn" onclick="setLang('te')">తెలుగు</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section class="d-hero">
+    <div class="d-hero-inner">
+      <span class="d-hero-badge" data-en="Support Our Cause" data-te="మా కారణాన్ని మద్దతు ఇవ్వండి">Support Our Cause</span>
+      <h1 data-en="Donations" data-te="విరాళాలు">Donations</h1>
+      <div class="hero-divider">
+        <span class="divider-line"></span>
+        <span class="divider-lotus">❋</span>
+        <span class="divider-line"></span>
+      </div>
+      <p data-en="Your generosity fuels our mission. Every contribution, big or small, makes a meaningful difference." data-te="మీ దాతృత్వం మా లక్ష్యానికి ఆజ్యం పోస్తుంది. చిన్నదైనా పెద్దదైనా ప్రతి సహకారం అర్థవంతమైన మార్పు తెస్తుంది.">
+        Your generosity fuels our mission. Every contribution, big or small, makes a meaningful difference.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       WHERE YOUR DONATION GOES
+  ═══════════════════════════════════════ -->
+  <section class="d-where">
+    <div class="container">
+      <div class="section-label" data-en="WHY YOUR SUPPORT MATTERS" data-te="మీ మద్దతు ఎందుకు ముఖ్యం">WHY YOUR SUPPORT MATTERS</div>
+      <h2 class="section-title" data-en="Where Your Donation Goes" data-te="మీ విరాళం ఎక్కడికి వెళ్తుంది">Where Your Donation Goes</h2>
+      <div class="section-ornament">⸻ ❋ ⸻</div>
+
+      <div class="d-where-grid">
+
+        <div class="d-where-left">
+          <div class="d-where-flame">🪔</div>
+          <blockquote data-en='"Every rupee you give lights a lamp of hope in our community."' data-te='"మీరు ఇచ్చే ప్రతి రూపాయి మా సమాజంలో ఆశ యొక్క దీపాన్ని వెలిగిస్తుంది."'>
+            "Every rupee you give lights a lamp of hope in our community."
+          </blockquote>
+          <cite>— Dharma Kala Vahini</cite>
+        </div>
+
+        <ul class="d-points">
+          <li>
+            <span class="d-point-icon">🎭</span>
+            <div>
+              <strong data-en="Cultural Events & Programmes" data-te="సాంస్కృతిక కార్యక్రమాలు">Cultural Events & Programmes</strong>
+              <p data-en="Funding classical dance, music, and theatrical performances that preserve our rich Telugu heritage." data-te="మన గొప్ప తెలుగు వారసత్వాన్ని కాపాడే శాస్త్రీయ నృత్యం, సంగీతం మరియు నాటక ప్రదర్శనలకు నిధులు.">Funding classical dance, music, and theatrical performances that preserve our rich Telugu heritage.</p>
+            </div>
+          </li>
+          <li>
+            <span class="d-point-icon">🤝</span>
+            <div>
+              <strong data-en="Community Welfare Activities" data-te="సమాజ సంక్షేమ కార్యక్రమాలు">Community Welfare Activities</strong>
+              <p data-en="Supporting underprivileged families through food drives, health camps, and financial aid." data-te="ఆహార శిబిరాలు, ఆరోగ్య శిబిరాలు మరియు ఆర్థిక సహాయం ద్వారా అణగారిన కుటుంబాలకు మద్దతు.">Supporting underprivileged families through food drives, health camps, and financial aid.</p>
+            </div>
+          </li>
+          <li>
+            <span class="d-point-icon">📚</span>
+            <div>
+              <strong data-en="Education & Youth Empowerment" data-te="విద్య & యువ సాధికారత">Education & Youth Empowerment</strong>
+              <p data-en="Scholarships, workshops, and awareness programmes that empower the next generation." data-te="స్కాలర్‌షిప్‌లు, వర్క్‌షాప్‌లు మరియు అవగాహన కార్యక్రమాలు యువ తరాన్ని శక్తివంతం చేస్తాయి.">Scholarships, workshops, and awareness programmes that empower the next generation.</p>
+            </div>
+          </li>
+          <li>
+            <span class="d-point-icon">🌸</span>
+            <div>
+              <strong data-en="Religious & Spiritual Programmes" data-te="మత & ఆధ్యాత్మిక కార్యక్రమాలు">Religious & Spiritual Programmes</strong>
+              <p data-en="Organising jagaram, abhishekam, bhajans and devotional events for the community." data-te="సమాజం కోసం జాగరం, అభిషేకం, భజనలు మరియు భక్తి కార్యక్రమాలను నిర్వహించడం.">Organising jagaram, abhishekam, bhajans and devotional events for the community.</p>
+            </div>
+          </li>
+          <li>
+            <span class="d-point-icon">🛡️</span>
+            <div>
+              <strong data-en="100% Transparent Fund Usage" data-te="100% పారదర్శక నిధుల వినియోగం">100% Transparent Fund Usage</strong>
+              <p data-en="Every rupee is fully accounted for. We maintain detailed records and are accountable to all donors." data-te="ప్రతి రూపాయి పూర్తిగా లెక్కించబడుతుంది. మేము వివరణాత్మక రికార్డులు నిర్వహిస్తాం మరియు అన్ని దాతలకు జవాబుదారీగా ఉంటాం.">Every rupee is fully accounted for. We maintain detailed records and are accountable to all donors.</p>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PATTERN BAND -->
+  <div class="pattern-band">
+    <div class="pattern-inner">
+      <span>❋</span><span>❋</span><span>❋</span><span>❋</span><span>❋</span>
+      <span>❋</span><span>❋</span><span>❋</span><span>❋</span><span>❋</span>
+      <span>❋</span><span>❋</span><span>❋</span><span>❋</span><span>❋</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       HOW TO DONATE — QR + GOOGLE FORM
+  ═══════════════════════════════════════ -->
+  <section class="d-how">
+    <div class="container">
+      <div class="section-label" data-en="HOW TO DONATE" data-te="ఎలా విరాళమివ్వాలి">HOW TO DONATE</div>
+      <h2 class="section-title" data-en="Two Simple Steps" data-te="రెండు సులభమైన దశలు">Two Simple Steps</h2>
+      <div class="section-ornament">⸻ ❋ ⸻</div>
+
+      <div class="d-how-grid">
+
+        <!-- STEP 1: QR -->
+        <div class="d-step-card">
+          <div class="d-step-header">
+            <div class="d-step-num">1</div>
+            <div>
+              <h3 data-en="Pay via UPI / QR Code" data-te="UPI / QR కోడ్ ద్వారా చెల్లించండి">Pay via UPI / QR Code</h3>
+              <p data-en="Scan the QR or use the UPI ID below to complete your payment." data-te="QR స్కాన్ చేయండి లేదా దిగువ UPI IDని ఉపయోగించి చెల్లింపు పూర్తి చేయండి.">Scan the QR or use the UPI ID below to complete your payment.</p>
+            </div>
+          </div>
+
+          <div class="d-step-body">
+            <!-- QR CODE -->
+            <div class="d-qr-wrap">
+              <div class="d-qr-frame">
+                <img src="images/qr-code.jpeg" alt="UPI QR Code" class="d-qr-img"
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <div class="d-qr-placeholder">
+                  <span>📱</span>
+                  <p data-en="QR Code Here" data-te="QR కోడ్ ఇక్కడ">QR Code Here</p>
+                  <small data-en="Save as images/qr-code.jpeg" data-te="images/qr-code.jpeg గా సేవ్ చేయండి">Save as images/qr-code.jpeg</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- UPI APPS -->
+            <div class="d-upi-apps">
+              <span>Google Pay</span><span>PhonePe</span><span>Paytm</span><span>BHIM</span>
+            </div>
+
+            <!-- UPI ID -->
+            <div class="d-upi-id">
+              <span class="d-upi-label">UPI ID</span>
+              <span class="d-upi-val" id="upiIdText">9182291202@ybl</span>
+              <button onclick="copyUPI()" class="d-copy-btn" title="Copy">
+                <span id="copyIcon">⧉</span>
+              </button>
+            </div>
+
+            <!-- STEPS -->
+            <div class="d-steps-list">
+              <div class="d-step-item">
+                <span class="d-step-circle">①</span>
+                <span data-en="Open any UPI app (Google Pay / PhonePe / Paytm)" data-te="ఏదైనా UPI యాప్ తెరవండి (Google Pay / PhonePe / Paytm)">Open any UPI app (Google Pay / PhonePe / Paytm)</span>
+              </div>
+              <div class="d-step-item">
+                <span class="d-step-circle">②</span>
+                <span data-en="Scan the QR code or enter the UPI ID manually" data-te="QR కోడ్ స్కాన్ చేయండి లేదా UPI IDని మాన్యువల్‌గా నమోదు చేయండి">Scan the QR code or enter the UPI ID manually</span>
+              </div>
+              <div class="d-step-item">
+                <span class="d-step-circle">③</span>
+                <span data-en="Enter your donation amount and confirm the payment" data-te="మీ విరాళం మొత్తాన్ని నమోదు చేసి చెల్లింపు నిర్ధారించండి">Enter your donation amount and confirm the payment</span>
+              </div>
+              <div class="d-step-item d-step-item--gold">
+                <span class="d-step-circle">④</span>
+                <span data-en="Screenshot or note your Transaction ID — needed in Step 2 →" data-te="మీ లావాదేవీ IDని స్క్రీన్‌షాట్ చేయండి లేదా గమనించండి — దశ 2 లో అవసరం →">Screenshot or note your Transaction ID — needed in Step 2 →</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 2: GOOGLE FORM -->
+        <div class="d-step-card">
+          <div class="d-step-header">
+            <div class="d-step-num">2</div>
+            <div>
+              <h3 data-en="Submit Your Donation Details" data-te="మీ విరాళం వివరాలు సమర్పించండి">Submit Your Donation Details</h3>
+              <p data-en="After payment, fill this form with your name, amount and transaction ID so we can acknowledge your contribution." data-te="చెల్లించిన తర్వాత, మీ విరాళాన్ని గుర్తించడానికి మీ పేరు, మొత్తం మరియు లావాదేవీ IDతో ఈ ఫారమ్ పూరించండి.">After payment, fill this form with your name, amount and transaction ID so we can acknowledge your contribution.</p>
+            </div>
+          </div>
+          <div class="d-form-wrap">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSfGMAAqU3rJfHmaEXryN7-0duxQLzCQQs6j4Ei4eU7ufCtTnQ/viewform?embedded=true"
+              width="100%"
+              height="620"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              style="border:none; display:block;">
+              Loading form…
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-overlay"></div>
+    <div class="cta-content">
+      <div class="section-label light" data-en="MORE WAYS TO HELP" data-te="సహాయం చేయడానికి మరిన్ని మార్గాలు">MORE WAYS TO HELP</div>
+      <h2 data-en="Can't Donate? Volunteer!" data-te="విరాళమివ్వలేరా? స్వచ్ఛందంగా సేవ చేయండి!">Can't Donate? Volunteer!</h2>
+      <div class="section-ornament light">⸻ ❋ ⸻</div>
+      <p data-en="Your time and skills are just as valuable as a monetary donation. Join our team of dedicated volunteers." data-te="మీ సమయం మరియు నైపుణ్యాలు ద్రవ్య విరాళం అంతే విలువైనవి.">Your time and skills are just as valuable as a monetary donation. Join our team of dedicated volunteers.</p>
+      <div class="cta-buttons">
+        <a href="join.html" class="btn-primary" data-en="Volunteer Now" data-te="ఇప్పుడు స్వచ్ఛందంగా పని చేయండి">Volunteer Now</a>
+        <a href="contact.html" class="btn-outline" data-en="Contact Us" data-te="మమ్మల్ని సంప్రదించండి">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Dharma Kala Vahini" class="footer-logo-img">
+        <div>
+          <div class="footer-logo-text">Dharma Kala Vahini</div>
+          <div class="footer-logo-sub">ధర్మ కళా వాహిని</div>
+        </div>
+      </div>
+      <p class="footer-tagline" data-en="Serving Society Through Culture" data-te="సంస్కృతి ద్వారా సమాజ సేవ">Serving Society Through Culture</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html" data-en="Home" data-te="హోమ్">Home</a>
+      <a href="projects.html" data-en="Projects" data-te="ప్రాజెక్టులు">Projects</a>
+      <a href="join.html" data-en="Join Us" data-te="మాలో చేరండి">Join Us</a>
+      <a href="donations.html" data-en="Donations" data-te="విరాళాలు">Donations</a>
+      <a href="contact.html" data-en="Contact" data-te="సంప్రదింపు">Contact</a>
+    </div>
+    <div class="footer-bottom">
+      <p data-en="© 2024 Dharma Kala Vahini. All rights reserved." data-te="© 2024 ధర్మ కళా వాహిని. అన్ని హక్కులు రిజర్వ్ చేయబడ్డాయి.">© 2024 Dharma Kala Vahini. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    function copyUPI() {
+      const txt = document.getElementById('upiIdText').textContent;
+      const icon = document.getElementById('copyIcon');
+      navigator.clipboard.writeText(txt).then(() => {
+        icon.textContent = '✓';
+        setTimeout(() => icon.textContent = '⧉', 2000);
+      });
+    }
+  </script>
+</body>
+</html>

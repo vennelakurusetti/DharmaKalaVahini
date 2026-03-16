@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us – Dharma Kala Vahini</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif+Telugu:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <div class="border-stripe"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="Dharma Kala Vahini Logo" class="nav-logo-img">
+        <div class="logo-text">
+          <span class="logo-main">Dharma Kala Vahini</span>
+          <span class="logo-sub">ధర్మ కళా వాహిని</span>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" data-en="Home" data-te="హోమ్">Home</a></li>
+        <li><a href="projects.html" data-en="Projects" data-te="ప్రాజెక్టులు">Projects</a></li>
+        <li><a href="join.html" data-en="Join Us" data-te="మాలో చేరండి">Join Us</a></li>
+        <li><a href="donations.html" data-en="Donations" data-te="విరాళాలు">Donations</a></li>
+        <li><a href="contact.html" class="active" data-en="Contact" data-te="సంప్రదింపు">Contact</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('en')">English</button>
+        <button class="lang-btn" onclick="setLang('te')">తెలుగు</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="c-hero">
+    <div class="c-hero-mandala c-hero-mandala--left"></div>
+    <div class="c-hero-mandala c-hero-mandala--right"></div>
+    <div class="c-hero-inner">
+      <span class="c-hero-badge" data-en="We'd Love to Hear From You" data-te="మీ నుండి వినాలని ఆసక్తిగా ఉన్నాం">We'd Love to Hear From You</span>
+      <h1 data-en="Contact Us" data-te="మమ్మల్ని సంప్రదించండి">Contact Us</h1>
+      <div class="hero-divider">
+        <span class="divider-line"></span>
+        <span class="divider-lotus">❋</span>
+        <span class="divider-line"></span>
+      </div>
+      <p data-en="Have a question, want to volunteer, or just want to say hello? Reach us through any of the channels below." data-te="మీకు ఏదైనా ప్రశ్న ఉందా, స్వచ్ఛంద సేవ చేయాలనుకుంటున్నారా, లేదా పలకరించాలనుకుంటున్నారా? దిగువ ఏదైనా మాధ్యమం ద్వారా మాకు చేరుకోండి.">
+        Have a question, want to volunteer, or just want to say hello? Reach us through any of the channels below.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT CHANNELS -->
+  <section class="c-channels">
+    <div class="container">
+      <div class="section-label" data-en="REACH US" data-te="మాకు చేరుకోండి">REACH US</div>
+      <h2 class="section-title" data-en="Get In Touch" data-te="సంప్రదించండి">Get In Touch</h2>
+      <div class="section-ornament">⸻ ❋ ⸻</div>
+
+      <div class="c-channels-grid">
+
+        <!-- EMAIL -->
+        <a href="https://mail.google.com/mail/?view=cm&to=dharmakalavahini@gmail.com" target="_blank" rel="noopener" class="c-channel-card c-channel-card--email">
+          <div class="c-channel-glow"></div>
+          <div class="c-channel-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="c-channel-svg">
+              <rect x="4" y="10" width="40" height="28" rx="4" stroke="currentColor" stroke-width="2.5" fill="none"/>
+              <path d="M4 14l20 14L44 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="c-channel-body">
+            <span class="c-channel-label" data-en="Email Us" data-te="ఇమెయిల్ చేయండి">Email Us</span>
+            <span class="c-channel-value">dharmakalavahini&#64;gmail.com</span>
+            <span class="c-channel-hint" data-en="We reply within 24–48 hours" data-te="మేము 24–48 గంటల్లో స్పందిస్తాం">We reply within 24–48 hours</span>
+          </div>
+          <span class="c-channel-arrow">→</span>
+        </a>
+
+        <!-- INSTAGRAM -->
+        <a href="https://www.instagram.com/dharmakalavahini" target="_blank" rel="noopener" class="c-channel-card c-channel-card--instagram">
+          <div class="c-channel-glow"></div>
+          <div class="c-channel-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="c-channel-svg">
+              <rect x="6" y="6" width="36" height="36" rx="10" stroke="currentColor" stroke-width="2.5" fill="none"/>
+              <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2.5" fill="none"/>
+              <circle cx="35" cy="13" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="c-channel-body">
+            <span class="c-channel-label" data-en="Instagram DM" data-te="ఇన్‌స్టాగ్రామ్ DM">Instagram DM</span>
+            <span class="c-channel-value">@dharmakalavahini</span>
+            <span class="c-channel-hint" data-en="Follow us & send a direct message" data-te="మాకు ఫాలో చేసి డైరెక్ట్ మెసేజ్ పంపండి">Follow us & send a direct message</span>
+          </div>
+          <span class="c-channel-arrow">→</span>
+        </a>
+
+        <!-- WHATSAPP -->
+        <a href="https://wa.me/919182291202?text=Hello%20Dharma%20Kala%20Vahini%2C%20I%20wanted%20to%20get%20in%20touch%20with%20you." target="_blank" rel="noopener" class="c-channel-card c-channel-card--whatsapp">
+          <div class="c-channel-glow"></div>
+          <div class="c-channel-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="c-channel-svg">
+              <path d="M24 6C14.06 6 6 14.06 6 24c0 3.19.84 6.18 2.3 8.77L6 42l9.5-2.27A17.93 17.93 0 0024 42c9.94 0 18-8.06 18-18S33.94 6 24 6z" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+              <path d="M17 20s.5-2 2-2c.8 0 1.5.3 2 1l1 2c.3.6.1 1.3-.3 1.8l-.7.7c.6 1.1 1.5 2 2.5 2.5l.7-.7c.5-.4 1.2-.6 1.8-.3l2 1c.7.4 1 1.2 1 2 0 1.5-2 2-2 2-4 0-10-6-10-10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            </svg>
+          </div>
+          <div class="c-channel-body">
+            <span class="c-channel-label" data-en="WhatsApp Message" data-te="వాట్సాప్ మెసేజ్">WhatsApp Message</span>
+            <span class="c-channel-value">+91 91822 91202</span>
+            <span class="c-channel-hint" data-en="Tap to open a chat directly" data-te="నేరుగా చాట్ తెరవడానికి నొక్కండి">Tap to open a chat directly</span>
+          </div>
+          <span class="c-channel-arrow">→</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PATTERN BAND -->
+  <div class="pattern-band">
+    <div class="pattern-inner">
+      <span>❋</span><span>❋</span><span>❋</span><span>❋</span><span>❋</span>
+      <span>❋</span><span>❋</span><span>❋</span><span>❋</span><span>❋</span>
+      <span>❋</span><span>❋</span><span>❋</span><span>❋</span><span>❋</span>
+    </div>
+  </div>
+
+  <!-- QUICK INFO -->
+  <section class="c-info">
+    <div class="container">
+      <div class="c-info-grid">
+
+        <div class="c-info-card">
+          <div class="c-info-icon">📍</div>
+          <h4 data-en="Location" data-te="స్థానం">Location</h4>
+          <p data-en="Hyderabad, Telangana, India" data-te="హైదరాబాద్, తెలంగాణ, భారతదేశం">Hyderabad, Telangana, India</p>
+        </div>
+
+        <div class="c-info-card">
+          <div class="c-info-icon">🕐</div>
+          <h4 data-en="Response Time" data-te="స్పందన సమయం">Response Time</h4>
+          <p data-en="Within 24–48 hours on all channels" data-te="అన్ని మాధ్యమాల్లో 24–48 గంటల్లో">Within 24–48 hours on all channels</p>
+        </div>
+
+        <div class="c-info-card">
+          <div class="c-info-icon">🌐</div>
+          <h4 data-en="Social Media" data-te="సామాజిక మాధ్యమం">Social Media</h4>
+          <p data-en="Instagram: @dharmakalavahini" data-te="ఇన్‌స్టాగ్రామ్: @dharmakalavahini">Instagram: <a href="https://www.instagram.com/dharmakalavahini" target="_blank">@dharmakalavahini</a></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-overlay"></div>
+    <div class="cta-content">
+      <div class="section-label light" data-en="JOIN THE CAUSE" data-te="కారణంలో చేరండి">JOIN THE CAUSE</div>
+      <h2 data-en="Want to Make a Difference?" data-te="మార్పు తీసుకురాలనుకుంటున్నారా?">Want to Make a Difference?</h2>
+      <div class="section-ornament light">⸻ ❋ ⸻</div>
+      <p data-en="Join us as a volunteer or support our mission through a donation. Every contribution matters." data-te="స్వచ్ఛంద సేవకుడిగా మాలో చేరండి లేదా విరాళం ద్వారా మా లక్ష్యానికి మద్దతు ఇవ్వండి.">Join us as a volunteer or support our mission through a donation. Every contribution matters.</p>
+      <div class="cta-buttons">
+        <a href="join.html" class="btn-primary" data-en="Volunteer Now" data-te="ఇప్పుడు స్వచ్ఛందంగా పని చేయండి">Volunteer Now</a>
+        <a href="donations.html" class="btn-outline" data-en="Donate Today" data-te="ఈరోజు విరాళమివ్వండి">Donate Today</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Dharma Kala Vahini" class="footer-logo-img">
+        <div>
+          <div class="footer-logo-text">Dharma Kala Vahini</div>
+          <div class="footer-logo-sub">ధర్మ కళా వాహిని</div>
+        </div>
+      </div>
+      <p class="footer-tagline" data-en="Serving Society Through Culture" data-te="సంస్కృతి ద్వారా సమాజ సేవ">Serving Society Through Culture</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html" data-en="Home" data-te="హోమ్">Home</a>
+      <a href="projects.html" data-en="Projects" data-te="ప్రాజెక్టులు">Projects</a>
+      <a href="join.html" data-en="Join Us" data-te="మాలో చేరండి">Join Us</a>
+      <a href="donations.html" data-en="Donations" data-te="విరాళాలు">Donations</a>
+      <a href="contact.html" data-en="Contact" data-te="సంప్రదింపు">Contact</a>
+    </div>
+    <div class="footer-bottom">
+      <p data-en="© 2024 Dharma Kala Vahini. All rights reserved." data-te="© 2024 ధర్మ కళా వాహిని. అన్ని హక్కులు రిజర్వ్ చేయబడ్డాయి.">© 2024 Dharma Kala Vahini. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
