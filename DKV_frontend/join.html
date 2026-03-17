@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join Us – Dharma Kala Vahini</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif+Telugu:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    /* ── HERO ── */
+    .j-hero {
+      position: relative;
+      background: var(--cream);
+      background-image: radial-gradient(ellipse 70% 80% at 50% 60%, rgba(139,26,26,0.07) 0%, transparent 70%);
+      text-align: center;
+      padding: 7rem 2rem 4.5rem;
+      overflow: hidden;
+    }
+    .j-hero-mandala {
+      position: absolute;
+      width: 420px; height: 420px;
+      border-radius: 50%;
+      pointer-events: none; opacity: 0.05;
+    }
+    .j-hero-mandala--left  { left: -140px; top: -80px;    background: radial-gradient(circle, var(--crimson) 30%, transparent 70%); animation: mpulse 8s ease-in-out infinite; }
+    .j-hero-mandala--right { right: -140px; bottom: -60px; background: radial-gradient(circle, var(--gold) 30%, transparent 70%);    animation: mpulse 8s ease-in-out infinite 4s; }
+    @keyframes mpulse { 0%,100%{transform:scale(1);opacity:0.05;} 50%{transform:scale(1.1);opacity:0.09;} }
+
+    .j-hero-inner {
+      position: relative; z-index: 2;
+      max-width: 700px; margin: 0 auto;
+      animation: fadeInUp 0.9s ease both;
+    }
+    .j-hero-badge {
+      display: inline-block;
+      font-family: var(--ff-display);
+      font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--gold); border: 1px solid var(--gold);
+      padding: 0.3rem 1.2rem; border-radius: 2px;
+      margin-bottom: 1.2rem;
+    }
+    .j-hero h1 {
+      font-family: var(--ff-display);
+      font-size: clamp(2.8rem, 7vw, 5rem);
+      font-weight: 700; color: var(--crimson);
+      line-height: 1.05; margin-bottom: 1rem;
+    }
+    .j-hero p {
+      font-family: var(--ff-body);
+      font-style: italic;
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: var(--muted); line-height: 1.8;
+      max-width: 560px; margin: 0.8rem auto 2rem;
+    }
+
+    /* ── BENEFITS ── */
+    .j-benefits {
+      padding: 5rem 0;
+      background: var(--white);
+    }
+    .j-benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 0;
+    }
+    .j-benefit-card {
+      background: var(--cream);
+      border: 1px solid rgba(139,26,26,0.08);
+      border-top: 4px solid var(--crimson);
+      border-radius: 0 0 8px 8px;
+      padding: 2rem 1.8rem;
+      text-align: center;
+      transition: all 0.3s;
+    }
+    .j-benefit-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 36px var(--shadow);
+      border-top-color: var(--gold);
+    }
+    .j-benefit-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+    .j-benefit-card h3 {
+      font-family: var(--ff-display);
+      font-size: 1.1rem; font-weight: 700;
+      color: var(--crimson); margin-bottom: 0.6rem;
+    }
+    .j-benefit-card p {
+      font-family: var(--ff-body);
+      font-size: 0.98rem; color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* ── FORM SECTION ── */
+    .j-form-section {
+      padding: 5rem 0 6rem;
+      background: var(--cream-dark);
+    }
+    .j-form-wrap {
+      background: var(--white);
+      border-radius: 8px;
+      border: 1px solid rgba(139,26,26,0.1);
+      overflow: hidden;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .j-form-header {
+      background: linear-gradient(135deg, var(--crimson-deep), var(--crimson));
+      padding: 2rem 2.5rem;
+      position: relative; overflow: hidden;
+    }
+    .j-form-header::after {
+      content: '❋';
+      position: absolute; right: 1.5rem; bottom: -1rem;
+      font-size: 8rem; opacity: 0.06; color: var(--gold-pale);
+      pointer-events: none;
+    }
+    .j-form-header h3 {
+      font-family: var(--ff-display);
+      font-size: 1.5rem; font-weight: 700;
+      color: var(--white); margin-bottom: 0.4rem;
+    }
+    .j-form-header p {
+      font-family: var(--ff-body);
+      font-size: 0.95rem; color: rgba(255,255,255,0.75);
+      line-height: 1.6; margin: 0;
+    }
+    .j-form-body {
+      padding: 1.5rem;
+      background: var(--cream);
+    }
+    .j-form-body iframe {
+      width: 100%;
+      height: 800px;
+      border: none;
+      border-radius: 4px;
+      display: block;
+    }
+
+    @media (max-width: 900px) {
+      .j-benefits-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .j-form-body iframe { height: 900px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="border-stripe"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="Dharma Kala Vahini Logo" class="nav-logo-img">
+        <div class="logo-text">
+          <span class="logo-main">Dharma Kala Vahini</span>
+          <span class="logo-sub">ధర్మ కళా వాహిని</span>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" data-en="Home" data-te="హోమ్">Home</a></li>
+        <li><a href="projects.html" data-en="Projects" data-te="ప్రాజెక్టులు">Projects</a></li>
+        <li><a href="join.html" class="active" data-en="Join Us" data-te="మాలో చేరండి">Join Us</a></li>
+        <li><a href="donations.html" data-en="Donations" data-te="విరాళాలు">Donations</a></li>
+        <li><a href="contact.html" data-en="Contact" data-te="సంప్రదింపు">Contact</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('en')">English</button>
+        <button class="lang-btn" onclick="setLang('te')">తెలుగు</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="j-hero">
+    <div class="j-hero-mandala j-hero-mandala--left"></div>
+    <div class="j-hero-mandala j-hero-mandala--right"></div>
+    <div class="j-hero-inner">
+      <span class="j-hero-badge"
+        data-en="Be Part of the Mission"
+        data-te="మిషన్‌లో భాగమవ్వండి">Be Part of the Mission</span>
+      <h1 data-en="Join Us" data-te="మాలో చేరండి">Join Us</h1>
+      <div class="hero-divider">
+        <span class="divider-line"></span>
+        <span class="divider-lotus">❋</span>
+        <span class="divider-line"></span>
+      </div>
+      <p data-en="Become part of a community dedicated to service, culture, and spiritual growth. Dharma Kala Vahini welcomes passionate individuals who want to contribute to meaningful initiatives and help create a positive impact in society."
+         data-te="సేవ, సంస్కృతి మరియు ఆధ్యాత్మిక వికాసానికి అంకితమైన సమాజంలో భాగమవ్వండి. అర్థవంతమైన కార్యక్రమాలకు సహకరించాలనుకునే మరియు సమాజంలో సానుకూల ప్రభావం కలిగించాలనుకునే ఉత్సాహవంతులను ధర్మ కళా వాహిని స్వాగతిస్తుంది.">
+        Become part of a community dedicated to service, culture, and spiritual growth. Dharma Kala Vahini welcomes passionate individuals who want to contribute to meaningful initiatives and help create a positive impact in society.
+      </p>
+      <a href="#form" class="btn-primary"
+        data-en="Become a Volunteer"
+        data-te="స్వచ్ఛంద సేవకుడు అవ్వండి">Become a Volunteer</a>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="j-benefits">
+    <div class="container">
+      <div class="section-label"
+        data-en="WHY VOLUNTEER WITH US"
+        data-te="మాతో ఎందుకు స్వచ్ఛంద సేవ చేయాలి">WHY VOLUNTEER WITH US</div>
+      <h2 class="section-title"
+        data-en="Volunteer With Purpose"
+        data-te="లక్ష్యంతో స్వచ్ఛంద సేవ చేయండి">Volunteer With Purpose</h2>
+      <div class="section-ornament">⸻ ❋ ⸻</div>
+
+      <div class="j-benefits-grid">
+
+        <div class="j-benefit-card">
+          <div class="j-benefit-icon">🤝</div>
+          <h3 data-en="Community Impact" data-te="సమాజ ప్రభావం">Community Impact</h3>
+          <p data-en="Participate in temple cleaning drives, community service programs, and social welfare activities that make a real difference."
+             data-te="దేవాలయ శుభ్రపరచడం, సమాజ సేవా కార్యక్రమాలు మరియు నిజమైన మార్పు తీసుకొచ్చే సామాజిక సంక్షేమ కార్యక్రమాలలో పాల్గొనండి.">
+            Participate in temple cleaning drives, community service programs, and social welfare activities that make a real difference.
+          </p>
+        </div>
+
+        <div class="j-benefit-card">
+          <div class="j-benefit-icon">🪔</div>
+          <h3 data-en="Spiritual Activities" data-te="ఆధ్యాత్మిక కార్యక్రమాలు">Spiritual Activities</h3>
+          <p data-en="Join bhajans, chanting events, jagaram, and spiritual gatherings that nourish your soul and connect you to our rich traditions."
+             data-te="భజనలు, జపం కార్యక్రమాలు, జాగరం మరియు మీ ఆత్మను పోషించే మరియు మన గొప్ప సంప్రదాయాలతో అనుసంధానించే ఆధ్యాత్మిక సమావేశాలలో చేరండి.">
+            Join bhajans, chanting events, jagaram, and spiritual gatherings that nourish your soul and connect you to our rich traditions.
+          </p>
+        </div>
+
+        <div class="j-benefit-card">
+          <div class="j-benefit-icon">🌱</div>
+          <h3 data-en="Personal Growth" data-te="వ్యక్తిగత వికాసం">Personal Growth</h3>
+          <p data-en="Build leadership, teamwork, and organizational skills while forming meaningful connections with like-minded individuals."
+             data-te="సమాన మనస్కులతో అర్థవంతమైన సంబంధాలు ఏర్పరచుకుంటూ నాయకత్వం, జట్టుపని మరియు సంఘటనా నైపుణ్యాలు నిర్మించుకోండి.">
+            Build leadership, teamwork, and organizational skills while forming meaningful connections with like-minded individuals.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PATTERN BAND -->
+  <div class="pattern-band">
+    <div class="pattern-inner">
+      <span>❋</span><span>❋</span><span>❋</span><span>❋</span><span>❋</span>
+      <span>❋</span><span>❋</span><span>❋</span><span>❋</span><span>❋</span>
+      <span>❋</span><span>❋</span><span>❋</span><span>❋</span><span>❋</span>
+    </div>
+  </div>
+
+  <!-- FORM SECTION -->
+  <section class="j-form-section" id="form">
+    <div class="container">
+      <div class="section-label"
+        data-en="REGISTER NOW"
+        data-te="ఇప్పుడు నమోదు చేసుకోండి">REGISTER NOW</div>
+      <h2 class="section-title"
+        data-en="Volunteer Registration"
+        data-te="స్వచ్ఛంద సేవక నమోదు">Volunteer Registration</h2>
+      <div class="section-ornament">⸻ ❋ ⸻</div>
+
+      <div class="j-form-wrap">
+        <div class="j-form-header">
+          <h3 data-en="Fill in Your Details" data-te="మీ వివరాలు నమోదు చేయండి">Fill in Your Details</h3>
+          <p data-en="Complete the form below to join Dharma Kala Vahini as a volunteer. We will reach out to you shortly after receiving your details."
+             data-te="ధర్మ కళా వాహినిలో స్వచ్ఛంద సేవకుడిగా చేరడానికి దిగువ ఫారమ్‌ను పూరించండి. మీ వివరాలు అందుకున్న తర్వాత మేము త్వరలో మీని సంప్రదిస్తాము.">
+            Complete the form below to join Dharma Kala Vahini as a volunteer. We will reach out to you shortly after receiving your details.
+          </p>
+        </div>
+        <div class="j-form-body">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLScyPHazzWEn_QrQffegB6khTjw-L2QBUEKpti2FDmWA3GGZzQ/viewform?embedded=true"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0">
+            Loading…
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-overlay"></div>
+    <div class="cta-content">
+      <div class="section-label light"
+        data-en="SUPPORT OUR CAUSE"
+        data-te="మా కారణాన్ని మద్దతు ఇవ్వండి">SUPPORT OUR CAUSE</div>
+      <h2 data-en="Can't Volunteer? Donate!" data-te="స్వచ్ఛంద సేవ చేయలేరా? విరాళమివ్వండి!">Can't Volunteer? Donate!</h2>
+      <div class="section-ornament light">⸻ ❋ ⸻</div>
+      <p data-en="Your financial support is just as impactful. Every donation helps us continue our cultural and social initiatives."
+         data-te="మీ ఆర్థిక మద్దతు కూడా అంతే ప్రభావవంతంగా ఉంటుంది. ప్రతి విరాళం మా సాంస్కృతిక మరియు సామాజిక కార్యక్రమాలను కొనసాగించడంలో మాకు సహాయపడుతుంది.">
+        Your financial support is just as impactful. Every donation helps us continue our cultural and social initiatives.
+      </p>
+      <div class="cta-buttons">
+        <a href="donations.html" class="btn-primary"
+          data-en="Donate Now"
+          data-te="ఇప్పుడు విరాళమివ్వండి">Donate Now</a>
+        <a href="contact.html" class="btn-outline"
+          data-en="Contact Us"
+          data-te="మమ్మల్ని సంప్రదించండి">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Dharma Kala Vahini" class="footer-logo-img">
+        <div>
+          <div class="footer-logo-text">Dharma Kala Vahini</div>
+          <div class="footer-logo-sub">ధర్మ కళా వాహిని</div>
+        </div>
+      </div>
+      <p class="footer-tagline"
+        data-en="Serving Society Through Culture"
+        data-te="సంస్కృతి ద్వారా సమాజ సేవ">Serving Society Through Culture</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html" data-en="Home" data-te="హోమ్">Home</a>
+      <a href="projects.html" data-en="Projects" data-te="ప్రాజెక్టులు">Projects</a>
+      <a href="join.html" data-en="Join Us" data-te="మాలో చేరండి">Join Us</a>
+      <a href="donations.html" data-en="Donations" data-te="విరాళాలు">Donations</a>
+      <a href="contact.html" data-en="Contact" data-te="సంప్రదింపు">Contact</a>
+    </div>
+    <div class="footer-bottom">
+      <p data-en="© 2024 Dharma Kala Vahini. All rights reserved."
+         data-te="© 2024 ధర్మ కళా వాహిని. అన్ని హక్కులు రిజర్వ్ చేయబడ్డాయి.">© 2024 Dharma Kala Vahini. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
