@@ -53,39 +53,76 @@ ul { list-style: none; }
   );
 }
 
-/* NAVBAR */
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: var(--cream);
-  border-bottom: 1px solid rgba(139,26,26,0.12);
-  box-shadow: 0 2px 20px var(--shadow);
-  transition: all 0.3s ease;
+/* ═══════════════════════════════════
+   DONATIONS PAGE — SELF CONTAINED
+════════════════════════════════════ */
+
+/* CSS VARIABLES */
+:root {
+  --crimson:     #8B1A1A;
+  --crimson-deep:#6B1010;
+  --crimson-light:#A52929;
+  --gold:        #B8860B;
+  --gold-light:  #D4A017;
+  --gold-pale:   #F0D080;
+  --cream:       #F5F0E8;
+  --cream-dark:  #EDE5D0;
+  --ink:         #1A1208;
+  --ink-light:   #3D2B0F;
+  --muted:       #6B5B3E;
+  --white:       #FDFAF4;
+  --shadow:      rgba(139,26,26,0.15);
+  --ff-display:  'Playfair Display', Georgia, serif;
+  --ff-body:     'Cormorant Garamond', Georgia, serif;
+  --ff-telugu:   'Noto Serif Telugu', serif;
 }
-.navbar.scrolled {
-  background: rgba(245,240,232,0.97);
-  backdrop-filter: blur(10px);
+
+/* RESET & BASE */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--ff-body);
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.7;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+ul { list-style: none; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* TOP BORDER */
+.border-stripe {
+  height: 6px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--crimson) 0px, var(--crimson) 20px,
+    var(--gold) 20px, var(--gold) 40px,
+    var(--crimson-deep) 40px, var(--crimson-deep) 60px
+  );
+}
+
+/* 🚫 NAVBAR REMOVED — use style.css navbar only */
+
+/* OPTIONAL SAFETY (ensures no override happens) */
+.nav-logo-img {
+  height: 80px !important;
 }
 .nav-inner {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0.8rem 2rem;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+  padding: 0.2rem 1.5rem !important;
 }
-.nav-logo {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  flex-shrink: 0;
-}
-.nav-logo-img {
-  height: 100px; /* Made logo much bigger */
-  width: auto;
-  object-fit: contain;
-  filter: drop-shadow(0 1px 4px rgba(139,26,26,0.2));
+.nav-links a {
+  font-size: 0.78rem !important;
+  padding: 0.5rem 0.7rem !important;
 }
 .footer-logo-img {
   height: 54px;
