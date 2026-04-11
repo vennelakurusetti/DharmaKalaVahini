@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5S5HB3VNK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-B5S5HB3VNK');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Awards & Recognition – Dharma Kala Vahini</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif+Telugu:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    /* ── PAGE TITLE (same as projects page) ── */
+    .awards-title {
+      text-align: center;
+      padding: 5rem 2rem 1rem;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+      font-weight: 700;
+      color: #8B1A1A;
+      letter-spacing: 0.02em;
+    }
+    .awards-subtitle {
+      text-align: center;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-style: italic;
+      font-size: 1.15rem;
+      color: #6B5B3E;
+      margin-bottom: 3rem;
+    }
+    .awards-ornament {
+      text-align: center;
+      color: #B8860B;
+      font-size: 1rem;
+      letter-spacing: 0.3em;
+      margin-bottom: 3rem;
+    }
+
+    /* ── AWARD CARD (same structure as project card) ── */
+    .award {
+      background: #EFE6DA;
+      margin: 0 auto 3rem;
+      padding: 2.5rem 3rem;
+      width: 85%;
+      border-radius: 0 0 12px 12px;
+      border-top: 4px solid #B8860B;
+      box-shadow: 0 8px 28px rgba(139,26,26,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-top-color 0.3s;
+    }
+    .award:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 40px rgba(139,26,26,0.18);
+      border-top-color: #8B1A1A;
+    }
+    .award-num {
+      display: inline-block;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #B8860B;
+      border: 1px solid #B8860B;
+      padding: 0.25rem 1rem;
+      border-radius: 2px;
+      margin-bottom: 0.4rem;
+      margin-right: 0.6rem;
+    }
+    .award-year {
+      display: inline-block;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      color: #FDFAF4;
+      background: #8B1A1A;
+      padding: 0.25rem 0.9rem;
+      border-radius: 2px;
+      margin-bottom: 0.4rem;
+    }
+    .award h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 700;
+      color: #8B1A1A;
+      margin-bottom: 0.3rem;
+      line-height: 1.2;
+    }
+    .award-by {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #B8860B;
+      margin-bottom: 0.9rem;
+      letter-spacing: 0.04em;
+    }
+    .award p {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.12rem;
+      line-height: 1.9;
+      color: #3D2B0F;
+    }
+    .award-images{
+      display: flex;
+      gap: 20px;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+    .award-images img {
+      flex: 1;
+      min-width: 260px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid rgba(184,134,11,0.2);
+      transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.3s;
+    }
+    .award-images img:hover {
+      transform: scale(1.04);
+      box-shadow: 0 12px 32px rgba(139,26,26,0.25);
+      border-color: #B8860B;
+    }
+
+    /* Divider */
+    .award-divider {
+      text-align: center;
+      color: #B8860B;
+      font-size: 1rem;
+      letter-spacing: 0.5em;
+      margin: 0 auto 3rem;
+      opacity: 0.5;
+    }
+
+    /* Coming soon placeholder */
+    .awards-coming-soon {
+      text-align: center;
+      padding: 4rem 2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .awards-coming-soon .cs-icon { font-size: 4rem; margin-bottom: 1.2rem; display: block; }
+    .awards-coming-soon h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.8rem; font-weight: 700;
+      color: #8B1A1A; margin-bottom: 0.6rem;
+    }
+    .awards-coming-soon p {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-style: italic;
+      font-size: 1.1rem; color: #6B5B3E;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 768px) {
+      .award { width: 92%; padding: 2rem 1.5rem; }
+      .award-images { flex-direction: column; align-items: center; }
+      .award-images img { min-width: unset; width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="border-stripe"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="Dharma Kala Vahini Logo" class="nav-logo-img">
+        <div class="logo-text">
+          <span class="logo-main">Dharma Kala Vahini</span>
+          <span class="logo-sub">ధర్మ కళా వాహిని</span>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" data-en="Home" data-te="హోమ్">Home</a></li>
+        <li><a href="projects.html" data-en="Projects" data-te="ప్రాజెక్టులు">Projects</a></li>
+        <li><a href="join.html" data-en="Join Us" data-te="మాలో చేరండి">Join Us</a></li>
+        <li><a href="donations.html" data-en="Donations" data-te="విరాళాలు">Donations</a></li>
+        <li><a href="awards.html" class="active" data-en="Awards" data-te="అవార్డులు">Awards</a></li>
+        <li><a href="contact.html" data-en="Contact" data-te="సంప్రదింపు">Contact</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('en')">English</button>
+        <button class="lang-btn" onclick="setLang('te')">తెలుగు</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE TITLE -->
+  <h1 class="awards-title" data-en="Awards & Recognition" data-te="అవార్డులు & గుర్తింపు">Awards & Recognition</h1>
+  <p class="awards-subtitle" data-en="Honours received for our dedicated service to culture, community, and society." data-te="సంస్కృతి, సమాజం మరియు సమాజ సేవలో మా నిబద్ధతకు లభించిన సన్మానాలు.">Honours received for our dedicated service to culture, community, and society.</p>
+  <div class="awards-ornament">⸻ ❋ ⸻</div>
+
+  <!-- ═══════════════════════════════════════
+       ADD YOUR AWARDS BELOW
+       Copy one block and paste to add more.
+  ═══════════════════════════════════════ -->
+
+  <!-- Award 1 -->
+  <div class="award">
+    <span class="award-num" data-en="Award 01" data-te="అవార్డు 01">Award 01</span>
+    <span class="award-year">2026</span>
+    <h2 data-en="Reflection Sanathana Conclave Award 2026" data-te="రిఫ్లెక్షన్ సనాతన కాన్క్లేవ్ అవార్డు 2026">Reflection Sanathana Conclave Award 2026</h2>
+    <div class="award-by" data-en="Awarded by — Reflection Bharat | Hosted by Amogh Deshapathi" data-te="రిఫ్లెక్షన్ భారత్ ద్వారా | ఆమోఘ్ దేశపతి నిర్వహణలో">Awarded by — Reflection Bharat | Hosted by Amogh Deshapathi</div>
+    <p data-en="Dharma Kala Vahini was honoured with the prestigious Reflection Sanathana Conclave Award 2026 by Reflection Bharat, in recognition of our dedicated efforts in promoting Sanathana Dharma, cultural preservation, and community service. This award is a testament to the commitment of our team in serving society through culture and devotion."
+       data-te="ధర్మ కళా వాహినికి సనాతన ధర్మాన్ని ప్రచారించడంలో, సాంస్కృతిక సంరక్షణలో మరియు సమాజ సేవలో చేసిన నిబద్ధమైన కృషికి గుర్తింపుగా రిఫ్లెక్షన్ భారత్ ద్వారా ప్రతిష్ఠాత్మక రిఫ్లెక్షన్ సనాతన కాన్క్లేవ్ అవార్డు 2026 అందించబడింది. ఈ అవార్డు సంస్కృతి మరియు భక్తి ద్వారా సమాజానికి సేవ చేయడంలో మా బృందం యొక్క నిబద్ధతకు నిదర్శనం.">
+      Dharma Kala Vahini was honoured with the prestigious Reflection Sanathana Conclave Award 2026 by Reflection Bharat, in recognition of our dedicated efforts in promoting Sanathana Dharma, cultural preservation, and community service. This award is a testament to the commitment of our team in serving society through culture and devotion.
+    </p>
+    <div class="award-images">
+      <img src="images/award_1_1.jpeg" alt="Sanathana Award 2026" onerror="this.style.display='none'">
+      <img src="images/award_1_2.png" alt="Sanathana Award 2026" onerror="this.style.display='none'">
+      <img src="images/award_1_3.jpeg" alt="Sanathana Award 2026" onerror="this.style.display='none'">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Dharma Kala Vahini" class="footer-logo-img">
+        <div>
+          <div class="footer-logo-text">Dharma Kala Vahini</div>
+          <div class="footer-logo-sub">ధర్మ కళా వాహిని</div>
+        </div>
+      </div>
+      <p class="footer-tagline" data-en="Serving Society Through Culture" data-te="సంస్కృతి ద్వారా సమాజ సేవ">Serving Society Through Culture</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html" data-en="Home" data-te="హోమ్">Home</a>
+      <a href="projects.html" data-en="Projects" data-te="ప్రాజెక్టులు">Projects</a>
+      <a href="join.html" data-en="Join Us" data-te="మాలో చేరండి">Join Us</a>
+      <a href="donations.html" data-en="Donations" data-te="విరాళాలు">Donations</a>
+      <a href="awards.html" data-en="Awards" data-te="అవార్డులు">Awards</a>
+      <a href="contact.html" data-en="Contact" data-te="సంప్రదింపు">Contact</a>
+    </div>
+    <div class="footer-bottom">
+      <p data-en="© 2025 Dharma Kala Vahini. All rights reserved." data-te="© 2025 ధర్మ కళా వాహిని. అన్ని హక్కులు రిజర్వ్ చేయబడ్డాయి.">© 2025 Dharma Kala Vahini. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
