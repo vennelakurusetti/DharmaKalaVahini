@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5S5HB3VNK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-B5S5HB3VNK');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Events – Dharma Kala Vahini</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif+Telugu:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    /* ── PAGE TITLE ── */
+    .events-title {
+      text-align: center;
+      padding: 5rem 2rem 1rem;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+      font-weight: 700;
+      color: #8B1A1A;
+      letter-spacing: 0.02em;
+    }
+    .events-subtitle {
+      text-align: center;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-style: italic;
+      font-size: 1.15rem;
+      color: #6B5B3E;
+      margin-bottom: 3rem;
+    }
+    .events-ornament {
+      text-align: center;
+      color: #B8860B;
+      font-size: 1rem;
+      letter-spacing: 0.3em;
+      margin-bottom: 3rem;
+    }
+
+    /* ── EVENT CARD ── */
+    .event-card {
+      background: #EFE6DA;
+      margin: 0 auto 3rem;
+      padding: 2.5rem 3rem;
+      width: 85%;
+      border-radius: 0 0 12px 12px;
+      border-top: 4px solid #8B1A1A;
+      box-shadow: 0 8px 28px rgba(139,26,26,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-top-color 0.3s;
+    }
+    .event-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 40px rgba(139,26,26,0.18);
+      border-top-color: #B8860B;
+    }
+
+    /* Badge row */
+    .event-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.8rem;
+    }
+    .event-num {
+      display: inline-block;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #B8860B;
+      border: 1px solid #B8860B;
+      padding: 0.25rem 1rem;
+      border-radius: 2px;
+    }
+    .event-completed {
+      display: inline-block;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #FDFAF4;
+      background: #2d7a3a;
+      padding: 0.25rem 0.9rem;
+      border-radius: 2px;
+    }
+
+    .event-card h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 700;
+      color: #8B1A1A;
+      margin-bottom: 0.2rem;
+      line-height: 1.1;
+    }
+    .event-tagline {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #B8860B;
+      margin-bottom: 1.2rem;
+      letter-spacing: 0.03em;
+    }
+
+    /* Details row */
+    .event-details {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.4rem;
+    }
+    .event-detail-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1rem;
+      color: #3D2B0F;
+    }
+    .event-detail-item span:first-child { font-size: 1.1rem; }
+
+    /* Description */
+    .event-card p {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.12rem;
+      line-height: 1.9;
+      color: #3D2B0F;
+      margin-bottom: 1rem;
+    }
+
+    /* Credits */
+    .event-credits {
+      background: rgba(139,26,26,0.05);
+      border-left: 3px solid #B8860B;
+      border-radius: 0 4px 4px 0;
+      padding: 1rem 1.4rem;
+      margin-bottom: 1.5rem;
+    }
+    .event-credits p {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1rem;
+      color: #3D2B0F;
+      margin-bottom: 0.3rem;
+      line-height: 1.6;
+    }
+    .event-credits p:last-child { margin-bottom: 0; }
+    .event-credits strong {
+      font-family: 'Playfair Display', Georgia, serif;
+      color: #8B1A1A;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    /* Photo grid — 3 cols, 2 rows = 6 pics */
+    .event-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 2rem;
+    }
+    .event-gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid rgba(184,134,11,0.2);
+      transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.3s;
+      display: block;
+    }
+    .event-gallery img:hover {
+      transform: scale(1.04);
+      box-shadow: 0 12px 32px rgba(139,26,26,0.25);
+      border-color: #B8860B;
+    }
+
+    /* Quote at bottom */
+    .event-quote {
+      text-align: center;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-size: 1.3rem;
+      color: #8B1A1A;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(184,134,11,0.25);
+      letter-spacing: 0.02em;
+    }
+
+    @media (max-width: 768px) {
+      .event-card { width: 92%; padding: 2rem 1.5rem; }
+      .event-gallery { grid-template-columns: repeat(2, 1fr); }
+      .event-details { gap: 1rem; }
+    }
+    @media (max-width: 480px) {
+      .event-gallery { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="border-stripe"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="Dharma Kala Vahini Logo" class="nav-logo-img">
+        <div class="logo-text">
+          <span class="logo-main">Dharma Kala Vahini</span>
+          <span class="logo-sub">ధర్మ కళా వాహిని</span>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" data-en="Home" data-te="హోమ్">Home</a></li>
+        <li><a href="projects.html" data-en="Projects" data-te="ప్రాజెక్టులు">Projects</a></li>
+        <li><a href="join.html" data-en="Join Us" data-te="మాలో చేరండి">Join Us</a></li>
+        <li><a href="donations.html" data-en="Donations" data-te="విరాళాలు">Donations</a></li>
+        <li><a href="events.html" class="active" data-en="Events" data-te="కార్యక్రమాలు">Events</a></li>
+        <li><a href="awards.html" data-en="Awards" data-te="అవార్డులు">Awards</a></li>
+        <li><a href="contact.html" data-en="Contact" data-te="సంప్రదింపు">Contact</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('en')">English</button>
+        <button class="lang-btn" onclick="setLang('te')">తెలుగు</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE TITLE -->
+  <h1 class="events-title" data-en="Our Events" data-te="మా కార్యక్రమాలు">Our Events</h1>
+  <p class="events-subtitle" data-en="Evenings of expression, culture, and human connection" data-te="వ్యక్తీకరణ, సంస్కృతి మరియు మానవ సంబంధాల సాయంత్రాలు">Evenings of expression, culture, and human connection</p>
+  <div class="events-ornament">⸻ ❋ ⸻</div>
+
+  <!-- ══════════════════════════════
+       EVENT 1 — NAVARASALU
+  ══════════════════════════════ -->
+  <div class="event-card">
+    <div class="event-meta">
+      <span class="event-num" data-en="Event 01" data-te="కార్యక్రమం 01">Event 01</span>
+      <span class="event-completed" data-en="Completed" data-te="పూర్తయింది">Completed</span>
+    </div>
+
+    <h2 data-en="Navarasalu" data-te="నవరసాలు">Navarasalu</h2>
+    <div class="event-tagline" data-en='"Nine emotions, one stage, a million stories."' data-te='"తొమ్మిది భావాలు, ఒక వేదిక, లక్ష కథలు."'>"Nine emotions, one stage, a million stories."</div>
+
+    <div class="event-details">
+      <div class="event-detail-item">
+        <span>📍</span>
+        <span data-en="The Grind Cafe, Madhapur, Hyderabad" data-te="ది గ్రైండ్ కేఫ్, మాధాపూర్, హైదరాబాద్">The Grind Cafe, Madhapur, Hyderabad</span>
+      </div>
+      <div class="event-detail-item">
+        <span>📅</span>
+        <span data-en="12th July, 2026" data-te="12 జూలై, 2026">12th July, 2026</span>
+      </div>
+      <div class="event-detail-item">
+        <span>🕐</span>
+        <span data-en="5:00 PM – 8:00 PM" data-te="సాయంత్రం 5:00 – 8:00">5:00 PM – 8:00 PM</span>
+      </div>
+    </div>
+
+    <p data-en="Navarasalu was Dharma Kala Vahini's first-ever open mic and cultural evening — a space where every emotion found a voice. What began as an idea became an evening filled with stories, poetry, music, thoughts, conversations, and most importantly, human connection."
+       data-te="నవరసాలు ధర్మ కళా వాహిని యొక్క మొట్టమొదటి ఓపెన్ మిక్ మరియు సాంస్కృతిక సాయంత్రం — ప్రతి భావం ఒక గొంతు కనుగొన్న స్థలం. ఒక ఆలోచనగా మొదలైనది కథలు, కవిత్వం, సంగీతం, ఆలోచనలు, సంభాషణలు మరియు అన్నింటికంటే ముఖ్యంగా మానవ సంబంధాలతో నిండిన సాయంత్రంగా మారింది.">
+      Navarasalu was Dharma Kala Vahini's first-ever open mic and cultural evening — a space where every emotion found a voice. What began as an idea became an evening filled with stories, poetry, music, thoughts, conversations, and most importantly, human connection.
+    </p>
+
+    <p data-en="Navarasalu was more than an event. It was a space where people came together to express, listen, reflect, and share the emotions and experiences that make us who we are. From the first conversation to the final moment, every story, every voice, every smile, and every shared thought made this evening truly special."
+       data-te="నవరసాలు ఒక కార్యక్రమం కంటే ఎక్కువ. ఇది ప్రజలు వ్యక్తీకరించడానికి, వినడానికి, ప్రతిబింబించడానికి మరియు మనల్ని మనంగా చేసే భావాలు మరియు అనుభవాలు పంచుకోవడానికి ఒకచోట వచ్చే స్థలం. మొదటి సంభాషణ నుండి చివరి క్షణం వరకు, ప్రతి కథ, ప్రతి గొంతు, ప్రతి చిరునవ్వు ఈ సాయంత్రాన్ని నిజంగా ప్రత్యేకంగా చేసింది.">
+      Navarasalu was more than an event. It was a space where people came together to express, listen, reflect, and share the emotions and experiences that make us who we are. From the first conversation to the final moment, every story, every voice, every smile, and every shared thought made this evening truly special.
+    </p>
+
+    <div class="event-credits">
+      <p><strong>Venue</strong> &nbsp;@thegrindcafehyd — for hosting us and providing the perfect space for this beautiful evening</p>
+      <p><strong>Guests</strong> &nbsp;@saketh_mallela &nbsp;·&nbsp; @aravindmylarapu &nbsp;·&nbsp; @sandeeepnayak_</p>
+      <p><strong>Singers</strong> &nbsp;@the_impulsivebrat_ &nbsp;·&nbsp; @arnav.yalamarthy</p>
+    </div>
+
+    <!-- 6 photos — 3 columns × 2 rows -->
+    <div class="event-gallery">
+      <img src="images/navarasalu_1.jpeg" alt="Navarasalu 1">
+      <img src="images/navarasalu_2.jpeg" alt="Navarasalu 2">
+      <img src="images/navarasalu_3.jpeg" alt="Navarasalu 3">
+      <img src="images/navarasalu_4.jpeg" alt="Navarasalu 4">
+      <img src="images/navarasalu_5.jpeg" alt="Navarasalu 5">
+      <img src="images/navarasalu_6.jpeg" alt="Navarasalu 6">
+    </div>
+
+    <div class="event-quote" data-en="Express. Listen. Unite. ✨" data-te="వ్యక్తీకరించండి. వినండి. ఐక్యమవ్వండి. ✨">
+      Express. Listen. Unite. ✨
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Dharma Kala Vahini" class="footer-logo-img">
+        <div>
+          <div class="footer-logo-text">Dharma Kala Vahini</div>
+          <div class="footer-logo-sub">ధర్మ కళా వాహిని</div>
+        </div>
+      </div>
+      <p class="footer-tagline" data-en="Serving Society Through Culture" data-te="సంస్కృతి ద్వారా సమాజ సేవ">Serving Society Through Culture</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html" data-en="Home" data-te="హోమ్">Home</a>
+      <a href="projects.html" data-en="Projects" data-te="ప్రాజెక్టులు">Projects</a>
+      <a href="join.html" data-en="Join Us" data-te="మాలో చేరండి">Join Us</a>
+      <a href="donations.html" data-en="Donations" data-te="విరాళాలు">Donations</a>
+      <a href="events.html" data-en="Events" data-te="కార్యక్రమాలు">Events</a>
+      <a href="awards.html" data-en="Awards" data-te="అవార్డులు">Awards</a>
+      <a href="contact.html" data-en="Contact" data-te="సంప్రదింపు">Contact</a>
+    </div>
+    <div class="footer-bottom">
+      <p data-en="© 2025 Dharma Kala Vahini. All rights reserved." data-te="© 2025 ధర్మ కళా వాహిని. అన్ని హక్కులు రిజర్వ్ చేయబడ్డాయి.">© 2025 Dharma Kala Vahini. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
